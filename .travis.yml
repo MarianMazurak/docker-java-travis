@@ -1,0 +1,9 @@
+language: java
+services:
+  - docker
+
+before_install:
+  - docker build -t docker-java-travis -f Dockerfile .
+
+script:
+  - docker run docker-java-travis mvn test

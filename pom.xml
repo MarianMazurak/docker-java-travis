@@ -10,8 +10,8 @@
     </parent>
     <groupId>com.mmazu</groupId>
     <artifactId>docker-java-travic</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>docker-java-travis</name>
+    <version>1</version>
+    <name>app</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
