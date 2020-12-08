@@ -4,6 +4,7 @@ services:
   - docker
 
 before_install:
+  - chmod +x mvnw
   - docker build -t docker-java-travis .
 
 script:
