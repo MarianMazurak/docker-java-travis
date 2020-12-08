@@ -1,11 +1,13 @@
 sudo: required
 language: java
+jdk:
+  - openjdk11
 services:
   - docker
 
 before_install:
   - chmod +x mvnw
-  - docker build -t docker-java-travis .
+  - docker-compose build
 
 script:
-  - docker run docker-java-travis mvn test
+  - docker-compose up mvn test
