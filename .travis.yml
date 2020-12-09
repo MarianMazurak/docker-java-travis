@@ -6,8 +6,8 @@ services:
   - docker
 
 before_install:
-  - chmod +x mvnw
-  - docker-compose build
+  - docker pull adoptopenjdk/openjdk11
 
 script:
-  - docker run docker-java-travic_docker-java-travis
+  - mvn test
+  - mvn clean package
