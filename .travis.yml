@@ -7,7 +7,7 @@ services:
 
 before_install:
   - chmod +x mvnw
-  - docker-compose -t docker-java-travis build
+  - docker-compose build
 
 script:
-  - docker run docker-java-travis mvn test
+  - docker run docker-java-travic_docker-java-travis mvn test
