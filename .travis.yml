@@ -1,11 +1,12 @@
-sudo: required
 language: java
+sudo: true
 jdk:
   - openjdk11
 services:
   - docker
 
 before_install:
+  - chmod +x mvnw
   - docker pull adoptopenjdk/openjdk11
 
 script:
