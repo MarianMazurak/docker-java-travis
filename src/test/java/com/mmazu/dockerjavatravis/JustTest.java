@@ -8,6 +8,7 @@ public class JustTest
     @Test
     public void justTest()
     {
+        System.out.println("HELLO FROM FEATURE");
         Assertions.assertTrue(true);
     }
 }
